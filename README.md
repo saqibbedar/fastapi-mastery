@@ -15,7 +15,7 @@ This is a continuously updated repository.
 
 1. Clone the repository.
 2. Follow the instructions within each project directory.
-3. Use the Justfile commands (e.g., `just code_quality`) to run local checks.
+3. Use the Justfile commands (e.g., `just cq`) to run local checks.
 
 ## Contributing
 
