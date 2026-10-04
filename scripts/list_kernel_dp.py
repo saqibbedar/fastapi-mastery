@@ -26,7 +26,9 @@ def get_dependencies():
 def main():
     try:
         print("\n--- kernel Directory ---\n")
-        print(f"- A centralized directory to manage dependencies for everyday workflow.\n- Directory location: {(ROOT / "kernel").resolve()}\n\n")
+        print(
+            f"- A centralized directory to manage dependencies for everyday workflow.\n- Directory location: {(ROOT / 'kernel').resolve()}\n\n"
+        )
 
         # current dependencies
         all_deps = get_dependencies()
