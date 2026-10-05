@@ -1,0 +1,13 @@
+[project]
+name = "1-project"
+version = "0.1.0"
+description = "1-project"
+readme = "README.md"
+authors = [
+    { name = "Saqib Bedar", email = "124094939+saqibbedar@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.141.1",
+    "uvicorn>=0.54.0",
+]
