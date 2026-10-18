@@ -3,6 +3,7 @@
 *.pyd
 *.bin       
 *.pkl
+*.env
 
 **/.vscode/
 **/.idea/

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-project-5-deployment
+  labels:
+    app: fastapi-project-5
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fastapi-project-5
+  template:
+    metadata:
+      labels:
+        app: fastapi-project-5
+    spec:
+      containers:
+      - name: fastapi-project-5-app
+        image: fastapi-project-5:v1
+        imagePullPolicy: Never   # Uses the image loaded via kind
+        ports:
+        - containerPort: 8000
+        env:
+        - name: DATABASE_URL
+          value: "postgresql+psycopg://postgres:1234@172.18.0.1:5432/fastapi_project5"
